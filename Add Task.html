@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Schedly - Add Task</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Schedly</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="final_login_page.html">Login</a>
+        <a href="index.html">Dashboard</a>
+        <a href="final_addtask_page.html" class="active">Add Task</a>
+        <a href="final_taskdetail_page.html">Task Detail</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <section>
+            <h2>Add New Task</h2>
+
+            <!-- FORM START -->
+            <form>
+
+                <!-- Text Input -->
+                <label for="taskName">Task Name:</label><br>
+                <input type="text" id="taskName" name="taskName"><br><br>
+
+                <!-- Date Input -->
+                <label for="dueDate">Due Date:</label><br>
+                <input type="date" id="dueDate" name="dueDate"><br><br>
+
+                <!-- Dropdown -->
+                <label for="category">Category:</label><br>
+                <select id="category" name="category">
+                    <option>Work</option>
+                    <option>Personal</option>
+                    <option>Other</option>
+                </select><br><br>
+
+                <!-- Radio Buttons -->
+                <label>Priority:</label><br>
+                <input type="radio" name="priority" value="High"> High<br>
+                <input type="radio" name="priority" value="Medium"> Medium<br>
+                <input type="radio" name="priority" value="Low"> Low<br><br>
+
+                <!-- Textarea -->
+                <label for="description">Description:</label><br>
+                <textarea id="description" name="description"></textarea><br><br>
+
+                <!-- Checkbox -->
+                <input type="checkbox" id="complete" name="complete">
+                <label for="complete">Mark as completed</label><br><br>
+
+                <!-- Buttons -->
+                <button type="submit">Submit</button>
+                <a href="page-2.html">Cancel</a>
+
+            </form>
+            <!-- FORM END -->
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Schedly</p>
+    </footer>
+
+</body>
+
+</html>

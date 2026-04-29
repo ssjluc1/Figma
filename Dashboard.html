@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Progress Dashboard</title>
+
+    <style>
+        /* Basic page style */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #ff5500;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 110px;
+            background: #ff5500;
+            padding: 20px;
+            float: left;
+            border-right: 2px solid black;
+            text-align: center;
+        }
+
+        .sidebar-header {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .nav-item {
+            display: block;
+            margin: 100% 0;
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav-item:hover {
+            background: lightgray;
+        }
+
+        /* User section */
+        .user-section {
+            margin-top: 20px;
+        }
+
+        /* Main content */
+        .main-content {
+            margin-left: 140px;
+            padding: 20px;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        /* Simple layout */
+        .dashboard-container {
+            margin-top: 20px;
+        }
+
+        /* Cards */
+        .focus-card,
+        .goals-card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .focus-card {
+            background: black;
+            color: white;
+        }
+
+        /* Progress circle */
+        .progress-circle {
+            width: 150px;
+            height: 150px;
+            border: 10px solid black;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 150px;
+            font-size: 30px;
+            background: white;
+            margin-bottom: 20px;
+        }
+
+        /* Assignments */
+        .assignments-section {
+            margin-top: 20px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">Schedule<br>Builder</div>
+
+        <a href="Dashboard.html" class="nav-item">Dashboard</a>
+        <a href="#" class="nav-item">Calendar</a>
+        <a href="#" class="nav-item">To do</a>
+        <a href="Color.html" class="nav-item">Habit Tracker</a>
+        <a href="Settings.html" class="nav-item">Settings</a>
+
+        <div class="user-section">
+            <div>👤</div>
+            <div>User</div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <h1 class="title">Progress Dashboard</h1>
+
+        <div class="dashboard-container">
+
+            <!-- Focus Mode -->
+            <div class="focus-card">
+                <h3>Focus Mode</h3>
+                <p>On</p>
+                <p>Off</p>
+            </div>
+
+            <!-- Progress -->
+            <div class="progress-circle">
+                0/10
+            </div>
+
+            <!-- Goals -->
+            <div class="goals-card">
+                <p>Go to: Finish Calculus</p>
+                <p>Go to: Finish Physics</p>
+                <p>Go to: Finish Chemistry</p>
+            </div>
+
+        </div>
+
+        <!-- Assignments -->
+        <div class="assignments-section">
+            <h3>0/10 Assignments Finished</h3>
+            <ul>
+                <li>0/3 Calculus 1</li>
+                <li>0/4 Princ. Chemistry</li>
+                <li>0/3 Comp. Thinking</li>
+            </ul>
+        </div>
+
+    </div>
+     <!-- Footer -->
+    <footer>
+        <p>© 2026 Schedly</p>
+    </footer>
+
+</body>
+</html>
